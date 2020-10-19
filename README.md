@@ -4,7 +4,6 @@
 - As the value of b increased, the value of I\_ext for which a limit cycle bevaviour was observed also increases
 
 ##Experiment 2
-# Part 1
 Phase plane for I\_ext=0 were plotted for the following values of b
 - 0
 - 0.4
