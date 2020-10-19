@@ -12,16 +12,16 @@ Phase plane for I\_ext=0 were plotted for the following values of b
 - -0.5
 
 The following is the plot for b = 0
-![case1](../images/exp2/case_1a_phase_plot_num_iter_100_b_0.0000_dt_0.0010_I_ext_0.0000_niter_100000.png)
+![case1](images/exp2/case_1a_phase_plot_num_iter_100_b_0.0000_dt_0.0010_I_ext_0.0000_niter_100000.png)
 
 The following is the plot for b = 0.4
-![case2](../images/exp2/case_1a_phase_plot_num_iter_100_b_0.4000_dt_0.0010_I_ext_0.0000_niter_100000.png)
+![case2](images/exp2/case_1a_phase_plot_num_iter_100_b_0.4000_dt_0.0010_I_ext_0.0000_niter_100000.png)
 
 The following is the plot for b = 0.8 
-![case3](../images/exp2/case_1a_phase_plot_num_iter_100_b_0.8000_dt_0.0010_I_ext_0.0000_niter_100000.png)
+![case3](images/exp2/case_1a_phase_plot_num_iter_100_b_0.8000_dt_0.0010_I_ext_0.0000_niter_100000.png)
 
 The following is the plot for b = -0.5
-![case4](../images/exp2/case_1a_phase_plot_num_iter_50_b_-0.5000_dt_0.0010_I_ext_0.0000_niter_100000.png)
+![case4](images/exp2/case_1a_phase_plot_num_iter_50_b_-0.5000_dt_0.0010_I_ext_0.0000_niter_100000.png)
 
 
 
