@@ -6,7 +6,7 @@ As the values of I\_ext increased for a fixed value of b, the neuron varied from
 As the value of b increased, the value of I\_ext for which a limit cycle bevaviour was observed also increases.
 
 
-#Experiment 2
+# Experiment 2
 Phase plane for I\_ext=0 were plotted for the following values of b
 - 0
 - 0.4
@@ -30,7 +30,7 @@ The following is the plot for b = -0.5.
 ![case4](images/exp2/case_1a_phase_plot_num_iter_50_b_-0.5000_dt_0.0010_I_ext_0.0000_niter_100000.png)
 
 
-#EXPERIMENT 3
+# EXPERIMENT 3
 Phase plot, W vs t and V vs t plots for the following initial states.
 - b = 0.8
 - b = 0.4
