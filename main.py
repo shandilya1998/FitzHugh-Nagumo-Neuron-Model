@@ -74,4 +74,38 @@ def exp2():
     )
     fig.savefig(os.path.join(exp_plot_dir, image_name))
 
-exp2()
+def exp3():
+    exp_plot_dir = 'images/exp3'
+    dt = 0.001
+    niter = int(10e4)
+    b = 0
+    I_ext = 0 
+    fn = FNNeuron(
+        dt, 
+        niter   
+    )    
+    V = np.arange(-10, 20)*0.1
+    w = 0
+    for v in tqdm(V):
+        fn.set_b(b)
+        fn.set_v(v)
+        fn.set_w(w)
+        fn.set_I_ext(I_ext)
+        image_name = 'case_1b_v_{val_v:.4f}_w_{val_w:.4f}_b_{val_b:.4f}_dt_{val_dt:.4f}_I_ext_{val_I:.4f}_niter_{n}.png'.format(
+            val_v = v,
+            val_w = w,
+            val_b = b,
+            val_dt = dt,
+            val_I = I_ext,
+            n = niter
+        )
+        exp = 'b_{val_b:.4f}'.format(val_b=b)
+        dir = os.path.join(exp_plot_dir, exp)
+        if not os.path.exists(dir):
+            os.mkdir(os.path.join(dir))
+        fn()
+        fn.plot(os.path.join(dir,image_name))
+        fn.reset()
+
+exp3()
+#exp2()

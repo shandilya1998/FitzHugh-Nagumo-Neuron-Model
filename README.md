@@ -27,5 +27,8 @@ The following is the plot for b = -0.5.
 
 ![case4](images/exp2/case_1a_phase_plot_num_iter_50_b_-0.5000_dt_0.0010_I_ext_0.0000_niter_100000.png)
 
-
-
+##EXPERIMENT 3
+Phase plot, W vs t and V vs t plots for the following initial states.
+- b = 0.8
+- b = 0.4
+The value of v is varied between -1 and 2 by steps of 0.1 to obtain different plots
