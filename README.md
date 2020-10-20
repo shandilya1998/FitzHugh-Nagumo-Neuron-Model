@@ -35,3 +35,12 @@ Phase plot, W vs t and V vs t plots for the following initial states.
 - b = 0.8
 - b = 0.4
 The value of v is varied between -1 and 2 by steps of 0.1 to obtain different plots
+
+## EXPERIMENT 4
+The range of I\_ext is computed for which the neuron model exhibits limit cycle behaviour.
+First approximate values I1 and I2 are calculated using brute forece plotting of phase plots and V vs t curves, based on observed values exact range is then calculated programmatically.
+Oscillations are determined by the ensuring that all peaks are a minimum of a 75% the maximum peak value observed and the distance between the minimum and the maximum peaks are atleast 25% the maximum peak value.
+These values were obtained by repeated experimentation with the possible thresholds and observation of the plots obtained.
+For b = 0.4, I1 = 1.23 and I2 = 2.8, such that for I1\<I\_ext\<I2, the neuron model exhibits limit cycle behaviour.
+
+

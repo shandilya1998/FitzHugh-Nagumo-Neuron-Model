@@ -16,6 +16,16 @@ class FNNeuron:
         self.w_hist = np.zeros(self.niter)
         self.t = np.arange(self.niter)*self.dt
 
+    def set_niter(self, n):
+        self.niter = n
+        self.v_hist = np.zeros(self.niter)
+        self.w_hist = np.zeros(self.niter)
+        self.t = np.arange(self.niter)*self.dt
+
+    def set_dt(self, dt):
+        self.dt = dt
+        self.t = np.arange(self.niter)*self.dt    
+
     def set_b(self, b):
         self.b = b
 
@@ -66,10 +76,14 @@ class FNNeuron:
         plt.clf()
         plt.close('all')
     
-    def __call__(self):
+    def __call__(self, perturb = False):
         for i in range(self.niter):
             self.v = self.v + self.dv(self.v, self.w)
             self.w = self.w + self.dw(self.v, self.w)
+            if(i>0):
+                if self.niter/i == 2 and perturb:      
+                    print('perturbed')
+                    self.set_v(0.001)
             self.v_hist[i] = self.v
             self.w_hist[i] = self.w
     
